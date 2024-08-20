@@ -14,12 +14,12 @@ function getLocalePath({currentlyInEnglish, currentPathName}) {
   if(currentlyInEnglish) {
     const pathObj = localeMapping.filter(item => item[1] === currentPathName)
     if(pathObj?.length > 0) {
-      nextPath = pathObj[0]
+      nextPath = pathObj[0][0]
     } // endif
   } else {
     const pathObj = localeMapping.filter(item => item[0] === currentPathName)
     if(pathObj?.length > 0) {
-      nextPath = pathObj[1]
+      nextPath = pathObj[0][1]
     } // endif
   } // endif
 
