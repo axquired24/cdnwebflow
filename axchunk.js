@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   }
 
   // Stop other function if the page didn't have locales
-  if(! isHavingLocales) {
+  if(! isHavingLocales(currentPathName)) {
     hideElm(langButtonWrapper)
     return false
   } // endif
