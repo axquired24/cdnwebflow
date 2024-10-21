@@ -3,13 +3,16 @@ const localeRoutes = [
   ["/about-us", "/en/about-us"],
   ["/career", "/en/career"],
   ["/blog", "/en/blog"],
+  ["/our-solution", "/en/our-solution"],
   ["/solutions/digital-products-ppob", "/en/solutions/digital-products-ppob"],
   ["/solutions/direct-debit", "/en/solutions/direct-debit"],
   ["/solutions/virtual-cards", "/en/solutions/virtual-cards"],
-  ["/solutions/instant-transfer", "/en/solutions/instant-transfer"]
+  ["/solutions/instant-transfer", "/en/solutions/instant-transfer"],
+  ["/solutions/payment-gateway", "/en/solutions/payment-gateway"]
 ];
 
 window.addEventListener("DOMContentLoaded", (event) => {
+  console.log("AYC Locale, version 1.0.7");
   const currentPathName = window.location.pathname
   const currentlyInEnglish = currentPathName.startsWith('/en')
 
